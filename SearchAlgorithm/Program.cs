@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Runtime.Remoting.Channels;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -98,9 +99,35 @@ namespace SearchAlgorithm
                 ctr = 0;
                 for (i = 0; i < n; i++)
                 {
-
+                    ctr++;
+                    if (arr[i] == item)
+                    {
+                        Console.WriteLine("\n" + item.ToString() + "found st position" + (i + 1).ToString());
+                        break;
+                    }
                 }
-             
+                if (i == n)
+                    Console.WriteLine("\n" + item.ToString() + "not found in the array" );
+                Console.WriteLine("\nNumber of comparison:" + ctr);
+                Console.Write("\nContinue searh (y/n):");
+                ch = Char.Parse(Console.ReadLine());
+
+            } while ((ch == 'y') || (ch == 'Y'));
+        }
+        static void Main(string[] args)
+        {
+            Program myList = new Program();
+            int pilihanmenu;
+            do
+            {
+                Console.WriteLine("Menu Option");
+                Console.WriteLine("===================");
+                Console.WriteLine("1. linear Search");
+                Console.WriteLine("2. Binary Search");
+                Console.WriteLine("3. Exit");
+                Console.WriteLine("Enter your choice (1,2,3) : ");
+                pilihanmenu = Convert.ToInt32(Console.ReadLine());
+
             }
         }
             
