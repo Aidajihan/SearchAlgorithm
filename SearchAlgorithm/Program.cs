@@ -91,7 +91,16 @@ namespace SearchAlgorithm
             int ctr;
             do
             {
+                //Accept the number to be searched
+                Console.Write("\nEnter the element you want to search: ");
+                int item = Convert.ToInt32(Console.ReadLine());
 
+                ctr = 0;
+                for (i = 0; i < n; i++)
+                {
+
+                }
+             
             }
         }
             
