@@ -42,6 +42,11 @@ namespace SearchAlgorithm
             }
             
         }
+
+        public void BinarySearch()
+        {
+
+        }
             
         
         
