@@ -128,10 +128,35 @@ namespace SearchAlgorithm
                 Console.WriteLine("Enter your choice (1,2,3) : ");
                 pilihanmenu = Convert.ToInt32(Console.ReadLine());
 
-            }
-        }
-            
-        
-        
+                switch (pilihanmenu)
+                {
+                    case 1:
+                        Console.WriteLine("");
+                        Console.WriteLine("...................");
+                        Console.WriteLine("Linear Search");
+                        Console.WriteLine("...................");
+                        myList.input();
+                        myList.LinearSearch();
+                        break;
+                    case 2:
+                        Console.WriteLine("");
+                        Console.WriteLine("...................");
+                        Console.WriteLine("Binary Search");
+                        Console.WriteLine("...................");
+                        myList.input();
+                        myList.BinarySearch();
+                        break ;
+                    case 3:
+                        Console.WriteLine("exit.");
+                        break ;
+                    default:
+                        Console.WriteLine("error");
+                        break ;
+                }
+                //to exit from console
+                Console.WriteLine("\n\nPress Return to exit.");
+                Console.ReadLine();     
+            }while(pilihanmenu != 3);
+        }        
     }
 }
