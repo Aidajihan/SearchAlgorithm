@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -27,6 +28,15 @@ namespace SearchAlgorithm
                 else
 
                     Console.WriteLine("\nArray should have minimum 1 and maximum 20 elements.\n");
+            }
+            //Accept array elements
+            Console.WriteLine("");
+            Console.WriteLine("--------------------------");
+            Console.WriteLine(" Enter array elements");
+            Console.WriteLine("--------------------------");
+            for (i = 0; i  < n; i++)
+            {
+
             }
             
         }
